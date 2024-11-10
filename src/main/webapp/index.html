@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>PerfectPet</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+
+
+
+  
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+ 
+  <!-- Stylesheets -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/fav.jpg" type="image/x-icon">
+
+<!--gallery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--gallery script-->
+  
+  
+</head>
+
+
+
+<style>
+
+.navbar {
+    margin-bottom: 0;
+    background:#e81bbd;
+    border: none;
+    border-radius: 0;
+	 font-family: "Times New Roman", sans-serif;
+}
+.navbar .navbar-nav li.active a {
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-top .top-left h6 {
+    font-size: 15px;
+    line-height: 15px;
+    color: #0a0a0a;
+    font-weight: 400;
+    padding: 10px 0px;
+    font-family: "Times new roman", sans-serif;
+}
+
+.header-uper {
+     padding: 4px 0px; 
+}
+
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #880a07;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 4px 4px;
+}
+
+.navbar .navbar-nav li a {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 18px 18px;
+}
+
+
+
+.tabs .nav-tabs li.active a {
+    color: #fff;
+    background: #af110f;
+    border: 2px solid #af110f;
+}
+
+.tabs .nav-tabs li a {
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 10px 25px;
+    font-weight: 600;
+    color: #4d4d4d;
+    font-family: "Source Sans Pro", sans-serif;
+    border: 2px solid  #af110f;
+    border-radius: 0;
+    transition: all .3s ease;
+}
+.section {
+    padding: 50px 0;
+}
+
+.btn-style-one {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 27px;
+    padding: 8px 36px;
+    background:#af110f;
+    border: 1px solid #af110f;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.header-uper .contact-info .item .icon-box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 53px;
+    border: 1px solid #af110f;
+}
+
+.service-box .section-title h3 {
+    position: relative;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 45px;
+    color: #ec091e;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Times New Roman", sans-serif;
+    color: #0a0a0a;
+    font-size: 16px;
+}
+
+.section-title h3 {
+    font-size: 40px;
+    line-height: 50px;
+    color:  #ec091e;
+    font-weight: 700;
+    font-family: "Times New Roman", sans-serif;
+}
+
+body
+{
+
+    font-family: "Times New Roman", sans-serif;
+    color: #0a0a0a;
+    
+}
+
+.index-link h3{
+    text-align:center;
+   color:#f1f1f1;
+   text-align:left;
+   font-family: "Times New Roman", sans-serif;
+   
+}
+
+h1 {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+
+    .brand-pills > li > a {
+        border-top-right-radius: 0px;
+    	border-bottom-right-radius: 0px;
+    }
+    
+    li.brand-nav.active a:after{
+    	content: " ";
+    	display: block;
+    	width: 0;
+    	height: 0;
+    	border-top: 10px solid transparent;
+    	border-bottom: 10px solid transparent;
+    	border-left: 1px solid ;
+    	position: absolute;
+    	top: 50%;
+    	margin-top: -20px;
+    	left: 100%;
+    	z-index: 2;
+    }
+}
+
+
+.index-social{
+    background-color:#000000;
+    color:#fff;
+}
+.link-area .fa-li{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:solid 1px #fff;
+    list-style-type:none;
+    margin:5px;
+    display:inline-block;
+}
+
+
+.index-link{
+    background-color:#84110f;
+}
+.index-link ul{
+    padding:0px;
+ color:#fff;
+}
+
+.index-link ul li{
+    list-style-type:none;
+     color:#fff;
+}
+.index-link ul li a{
+  text-decoration:none;
+  font-size:16px;
+  color:#fff;
+  display:block;
+  text-align:left;
+}
+.index-link ul li a:hover{
+     text-decoration:underline;
+}
+.container-pad {
+    padding: 30px 15px;
+}
+
+
+
+</style>
+
+<body>
+
+
+
+<!--Header Upper-->
+<section class="header-uper">
+      <div class="container clearfix">
+            <div class="logo">
+                  <figure>
+                        <a href="index.html">
+                              <img src="img/petlogo.jpg" alt="" width="300px" height="80px">
+                        </a>
+                  </figure>
+            </div>
+            <div class="right-side">
+                 
+                        <li class="item">
+                              
+                              <strong>Email: adoptperfectpet@gmail.com</strong>
+                              <br>
+                              
+                                    <strong>Call Now : +91 9876543210</strong>
+                             
+                        </li>
+                    
+              
+                
+            </div>
+      </div>
+</section>
+<!--Header Upper-->
+
+
+
+<!-------**************--->
+
+<!--Main Header-->
+<nav class="navbar navbar-default">
+      <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                  </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  
+
+
+ <ul class="nav navbar-nav">
+                        <li class="menuItem active"><a href="#wrapper">Home</a></li>
+                        <li class="menuItem"><a href="#aboutus">About</a></li>
+                        <li class="menuItem"><a href="#specialties">Adopt</a></li>
+                        <li class="menuItem"><a href="#gallery">AdoptProcess </a></li>
+                       
+                        <li class="menuItem"><a href="#contact">Contact</a></li>
+                      </ul>
+
+
+
+
+					
+            </div>
+            <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+</nav>
+<!--End Main Header -->
+
+  <div class="wrapper" id="wrapper">
+   
+   
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/pet1.jpg" alt=" " style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/pet2.jpg" alt=" " style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="img/pet3.jpg" alt=" " style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+   
+    <!--about us-->
+    <section class="aboutus" id="aboutus">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>About Perfect Pets</h2>
+		 <br>
+		  <p>
+			  Welcome to Perfect Pet, where we believe that every pet deserves a loving home. We are a passionate team dedicated to rescuing, rehabilitating,
+			  and re-homing animals in need.
+			  Our mission is to connect deserving animals with caring individuals or families, creating lifelong bonds and brighter futures.</p>
+		 
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="papers text-center">
+              <img src="img/team/1.jpg" alt=""><br/>
+        
+            </div>
+          </div>
+		  
+		  
+          <div class="col-md-6">
+            <div class="papers text-center">
+
+              <h4 class="">Story of Perfect pets</h4>
+              <p>
+			Perfect Pet was founded in 2003 by a group of animal lovers who witnessed the plight of abandoned and neglected animals in our community. 
+			Fueled by a shared commitment to make a difference,
+			we set out to create a safe haven for these animals, where they could find love, care, and a second chance.
+			Over the years, we have grown into a trusted and respected organization, thanks to the unwavering support of our dedicated volunteers, generous donors, and compassionate adopters. 
+			Together, we have transformed the lives of countless animals, giving them the opportunity to experience happiness, security, and the love they deserve.
+                </p>
+            </div>
+          </div>
+		  
+		  
+		  
+        </div>
+      </div>
+    </section>
+
+
+    <!--skills-->
+    <section class="specialties" id="specialties">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>Adopt Perfect Pets</h2>
+         
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+       
+	   
+	   At Perfect Pet, we strive to make the adoption process as smooth and rewarding as possible.
+	   We want to ensure that each animal finds the perfect match and a forever home. Here's an overview of our adoption process:
+	   <br>
+	   
+<br>
+	   
+        </div>
+      </div>
+<br>
+      <div class="container">
+	  <h3><center>Browse Available Pets for Adopt</center></h3> <br>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="skills">
+              <h3 class="main text-center">Charlie</h3>
+              <div class="restitem clearfix">
+            
+              <center>  
+ <img src="img/a1.jpg" alt="" width="180px" height="220px">
+
+			  </center>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skills">
+              <h3 class="main text-center">Jimmy</h3>
+              <div class="restitem clearfix">
+               
+             <center>  
+			 
+			 <img src="img/a2.jpg" alt="" width="180px" height="220px">
+			 </center>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skills">
+              <h3 class="main text-center">Pommie</h3>
+              <div class="restitem clearfix">
+          <center>  
+		<img src="img/a3.jpg" alt="" width="180px" height="220px">
+		  
+		  </center>
+               
+              </div>
+               
+            </div>
+          </div>
+        </div>
+		
+		
+		
+		
+		
+		
+		
+		   <div class="row">
+          <div class="col-md-4">
+            <div class="skills">
+              <h3 class="main text-center">kitty</h3>
+              <div class="restitem clearfix">
+            
+              <center>  
+		<img src="img/a4.jpg" alt="" width="180px" height="220px">
+		  
+		  </center>  
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skills">
+              <h3 class="main text-center">cute</h3>
+              <div class="restitem clearfix">
+               
+           <center>  
+		<img src="img/a5.jpg" alt="" width="180px" height="220px">
+		  
+		  </center>
+			 </center>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skills">
+              <h3 class="main text-center">Snow</h3>
+              <div class="restitem clearfix">
+          <center>  
+		<img src="img/a6.jpg" alt="" width="180px" height="220px">
+		  
+		  </center>
+		  </div>
+               
+            </div>
+          </div>
+        </div>
+		
+		
+		
+		
+		   <div class="row">
+          <div class="col-md-4">
+            <div class="skills">
+              <h3 class="main text-center">Charmy</h3>
+              <div class="restitem clearfix">
+            
+<center>  
+		<img src="img/a7.jpg" alt="" width="180px" height="220px">
+		  
+		  </center>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skills">
+              <h3 class="main text-center">Browny</h3>
+              <div class="restitem clearfix">
+               
+           <center>  
+		<img src="img/a9.jpg" alt="" width="180px" height="220px">
+		  
+		  </center>   
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skills">
+              <h3 class="main text-center">Sky</h3>
+              <div class="restitem clearfix">
+			 
+			<center>  
+		<img src="img/a8.jpg" alt="" width="180px" height="220px">
+		  
+		  </center>
+              </div>
+               
+            </div>
+          </div>
+        </div>
+		
+		
+		
+		
+		
+		
+		
+      </div>
+    </section>
+
+
+    <!--portfolio-->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>Our Adoption Process</h2> <br>
+		  
+		  
+		   <img src="img/pet6.jpg" alt="" width="300px" height="80px">
+		   
+		   <br>
+          <p>
+<b>Browse Available Pets </b><br>
+
+Browse Available Pets: Take a look at our online gallery, where you can view profiles and photos of our adorable pets waiting for their forever homes. 
+Each profile provides valuable information about the animal's age, breed, personality traits, and any special needs.
+
+
+</p>
+
+<br>
+<b>Visit our Shelter</b><br> If you find a pet that captures your heart, we encourage you to visit our shelter to meet them in person.
+ Our knowledgeable staff will be available to answer any questions and guide you through the adoption process.	  
+	  
+	  <br><br>
+	   
+	<b>   Application and Interview</b><br> Fill out an adoption application form, which helps us understand your lifestyle, preferences, and expectations. 
+	   We want to ensure that both you and the pet are a perfect match. After reviewing your application, we'll conduct a friendly interview to
+	   learn more about you and address any concerns or questions.
+<br>
+<br>
+<b>Meet-and-Greet</b><br>If the initial interview goes well, we'll arrange a meet-and-greet session with the pet. 
+This allows you to interact with them and assess if there is a strong connection and compatibility.
+<br><br>
+<b>Home Visit</b><br> For certain pets, we may require a home visit to ensure the environment is safe and suitable for their specific needs.
+ This step helps us ensure a successful transition and integration into your home.
+<br>
+<br>
+<b>Adoption Fee and Paperwork</b><br> Once you've found your perfect match, there will be an adoption fee, which helps cover the cost of vaccinations, 
+spaying/neutering, and other medical treatments provided to the pet. We will guide you through the necessary paperwork and provide you with all the information
+ you need for a smooth transition.
+<br><br>
+<b>Post-Adoption Support</b><br> Our commitment doesn't end with the adoption process. 
+We offer post-adoption support and guidance, ensuring a successful transition for both you and your new companion. 
+Our team is always here to provide advice, resources, and assistance whenever you need it. <br>
+
+	   </div>
+
+            
+      </div>
+
+</section>
+    <!--education-->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="heading">
+          <h2>Contact</h2>
+         </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="map">
+              <div >
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.84916296526!2d77.6309395!3d12.9539974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1687886755077!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			  
+			
+
+			</div>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <div class="col-md-5">
+              <h4>Perfect Pet Contact Info</h4>
+               <ul>
+             <li><i class="fa fa-home fa-2x"></i> c/o Perfect Pet, Bengaluru, Karnataka</li>
+                <li><i class="fa fa-phone fa-2x"></i> 9876543210</li>
+                <li><i class="fa fa-envelope fa-2x"></i> adoptperfectpet@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ 
+    </section>
+
+    <!--footer-->
+    <section class="footer" id="footer">
+      <p class="text-center">
+        <a href="#wrapper" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
+      </p>
+      <div class="container">
+        <ul>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+          <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+        </ul>
+        <p>&copy; 2023. All Rights Reserved.</p>
+        <div class="credits">
+          
+          <a href="">Designed</a> by <a href=" ">Sanjana</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/modernizr.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/menustick.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/easing.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/masonry.js"></script>
+  <script src="js/imgloaded.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/colorfinder.js"></script>
+  <script src="js/gridscroll.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/common.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+  <script type="text/javascript">
+    jQuery(function($) {
+      $(document).ready(function() {
+        //enabling stickUp on the '.navbar-wrapper' class
+        $('.navbar-wrapper').stickUp({
+          parts: {
+            0: 'banner',
+            1: 'aboutus',
+            2: 'specialties',
+            3: 'gallery',
+            4: 'feedback',
+            5: 'contact'
+          },
+          itemClass: 'menuItem',
+          itemHover: 'active',
+          topMargin: 'auto'
+        });
+      });
+
+      //Google Map
+      var get_latitude = $('#google-map').data('latitude');
+      var get_longitude = $('#google-map').data('longitude');
+
+      function initialize_google_map() {
+        var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
+        var mapOptions = {
+          zoom: 14,
+          scrollwheel: false,
+          center: myLatlng
+        };
+        var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize_google_map);
+    });
+  </script>
+  <script src="contactform/contactform.js"></script>
+
+
+</body>
+
+</html>
