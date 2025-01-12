@@ -1,13 +1,18 @@
 ---
 - hosts: localhost
   tasks:
-    - name: Copy WAR file
+    - name: Clone the GitHub repository
+      git:
+        repo: https://github.com/Sanjana1455/perfectpet.git
+        dest: /tmp/perfectpet
+
+    - name: Copy WAR file from the repository
       copy:
-        src: /path/to/war/file.war
+        src: /tmp/perfectpet/target/perfectpet.war
         dest: /var/lib/docker/webapp.war
 
     - name: Build Docker Image
-      shell: docker build -t webapp-image .
+      shell: docker build -t webapp-image /tmp/perfectpet
 
     - name: Run Docker Container
       shell: docker run -d -p 80:8080 --name webapp-container webapp-image
