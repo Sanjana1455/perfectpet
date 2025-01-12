@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Copy WAR file
+      copy:
+        src: /path/to/war/file.war
+        dest: /var/lib/docker/webapp.war
+
+    - name: Build Docker Image
+      shell: docker build -t webapp-image .
+
+    - name: Run Docker Container
+      shell: docker run -d -p 80:8080 --name webapp-container webapp-image
